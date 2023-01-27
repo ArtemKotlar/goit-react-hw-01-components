@@ -1,3 +1,4 @@
+import PT from 'prop-types';
 import FriendListItem from './FriendListItem'
 import { List } from './FriendList.styled'
 const FriendList = ({friends}) => {
@@ -18,3 +19,7 @@ const FriendList = ({friends}) => {
 }
 
 export default FriendList
+
+FriendList.propTypes = {
+  id: PT.arrayOf(PT.shape({id: PT.string.isRequired}))
+}

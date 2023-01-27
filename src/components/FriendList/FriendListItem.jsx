@@ -1,3 +1,4 @@
+import PT from 'prop-types';
 import { Item, Indicator, Image, Title } from "./FriendList.styled";
 const FriendListItem = ({avatar, isOnline, name}) => {
     return (
@@ -9,3 +10,9 @@ const FriendListItem = ({avatar, isOnline, name}) => {
     );
 }
 export default FriendListItem
+
+FriendListItem.propTypes = {
+  avatar: PT.string.isRequired,
+  name: PT.string.isRequired,
+  isOnline: PT.bool.isRequired,
+};
