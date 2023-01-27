@@ -4,11 +4,11 @@ export const Section = styled.section` display: flex;
 flex-direction: column;
 text-align: center;
 margin: 0 auto;
-margin-top: 30px;
+margin-top: 50px;
 width: fit-content;
 background-color: rgb(120 185 175);
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+border-radius: 5px;
 `;
 
 export const Title=styled.h2` font-size: 20px;

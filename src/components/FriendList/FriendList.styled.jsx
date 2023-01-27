@@ -5,9 +5,8 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #504849;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 50px;
 `;
 
 export const Item = styled.li`
@@ -15,14 +14,16 @@ export const Item = styled.li`
   align-items: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: #877677;
+  background-color: rgb(171 225 217 / 21%);
   padding: 20px;
   width: 200px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 `;
 
 export const Indicator = styled.span`
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   background-color: ${({isOnline}) => (isOnline ? 'green' : 'red')};
   border-radius: 50%;
   margin: 0 15px;
@@ -35,7 +36,8 @@ export const Image = styled.img`
 
 export const Title = styled.p`
   display: block;
-  color: #141a35;
+  color: #000000;
   font-size: 20px;
+  font-weight: 500;
   padding-left: 15px;
 `;
