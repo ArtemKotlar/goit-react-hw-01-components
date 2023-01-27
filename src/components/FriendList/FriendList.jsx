@@ -7,9 +7,9 @@ const FriendList = ({friends}) => {
         return (
           <FriendListItem
             key={id}
-            image={avatar}
+            avatar={avatar}
             name={name}
-            status={isOnline}
+            isOnline={isOnline}
           />
         );
       })}

@@ -23,7 +23,7 @@ export const Item = styled.li`
 export const Indicator = styled.span`
   width: 8px;
   height: 8px;
-  background-color: ${({ status }) => (status ? 'green' : 'red')};
+  background-color: ${({isOnline}) => (isOnline ? 'green' : 'red')};
   border-radius: 50%;
   margin: 0 15px;
 `;

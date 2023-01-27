@@ -1,9 +1,9 @@
 import { Item, Indicator, Image, Title } from "./FriendList.styled";
-const FriendListItem = ({imege, status, name}) => {
+const FriendListItem = ({avatar, isOnline, name}) => {
     return (
         <Item>
-            <Indicator >{status}</Indicator>
-            <Image src={imege} alt="User avatar" width="48" />
+            <Indicator >{isOnline}</Indicator>
+            <Image src={avatar} alt="User avatar" width="48" />
             <Title >{name}</Title>
         </Item>
     );
