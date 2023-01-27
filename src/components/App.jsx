@@ -6,7 +6,6 @@ import data from '../Data/data.json'
 import friends from '../Data/friends.json'
 
 export const App = () => {
-  console.log('userData')
   return (
     <div>
        <Profile
