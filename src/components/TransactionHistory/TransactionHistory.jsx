@@ -1,8 +1,8 @@
 import PT from 'prop-types';
-import css from "./TransactionHistory.module.css"
+import css from './TransactionHistory.module.css';
 
-const TransactionHistory = ({transactions}) => {
-    return (
+const TransactionHistory = ({ transactions }) => {
+  return (
     <table className={css.transaction__history}>
       <thead className={css.transaction__head}>
         <tr>
@@ -25,9 +25,9 @@ const TransactionHistory = ({transactions}) => {
       })}
     </table>
   );
-}
+};
 
-export default TransactionHistory
+export default TransactionHistory;
 
 TransactionHistory.propTypes = {
   id: PT.string,

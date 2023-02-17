@@ -1,22 +1,20 @@
 import PT from 'prop-types';
-import { Section, Title, List, Item, Value } from './Statistics.styled'
+import { Section, Title, List } from './Statistics.styled';
+import { StatisticsList } from './StatisticsList';
 
 const Statistics = ({ title, stats }) => {
-    return (
+  return (
     <Section>
-        {title && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
 
-        <List>
-            {stats.map(el => (
-            <Item key={el.id}>              
-                <Value>{el.label}</Value>
-                <Value>{el.percentage}%</Value>
-            </Item>
-            ))}  
-        </List>
+      <List>
+        {stats.map(({ id, label, percentage }) => {
+          return <StatisticsList key={id} label={label} value={percentage} />;
+        })}
+      </List>
     </Section>
-    )
-}
+  );
+};
 
 export default Statistics;
 
