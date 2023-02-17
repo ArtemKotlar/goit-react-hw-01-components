@@ -6,10 +6,13 @@ import user from '../Data/user.json';
 import data from '../Data/data.json';
 import friends from '../Data/friends.json';
 import transactions from '../Data/transactions.json';
+import { Button } from './Button/Button';
+import { DiReact, DiCodeigniter, DiProlog } from 'react-icons/di';
+import { Box } from './Box';
 
 export const App = () => {
   return (
-    <div>
+    <Box bg="#FFF8DC">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -19,7 +22,16 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory transactions={transactions} />;
-    </div>
+      <TransactionHistory transactions={transactions} />
+      <Button icon={DiReact}>Клік</Button>
+      <Button icon={DiCodeigniter} type="submit">
+        Форма
+      </Button>
+      <Button type="submit">Без іконкі</Button>
+      {/* Для disabled */}
+      <Button icon={DiProlog} type="submit" disabled>
+        Вимкнено
+      </Button>
+    </Box>
   );
 };

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Section = styled.section`
   display: flex;
@@ -7,7 +7,7 @@ export const Section = styled.section`
   margin: 0 auto;
   margin-top: 50px;
   width: fit-content;
-  background-color: rgb(120 185 175);
+  background-color: ${p => p.theme.colors.primary};
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 `;
@@ -50,5 +50,5 @@ export const Value = styled.span`
   display: flex;
   flex-direction: column;
   padding: 15px;
-  color: #fff;
+  color: ${p => p.theme.colors.background};
 `;
