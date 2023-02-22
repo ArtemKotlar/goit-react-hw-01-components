@@ -22,8 +22,12 @@ export const theme = {
   },
   radii: {
     none: '0',
-    normal: '4px',
+    normal: '5px',
     round: '50%',
+  },
+
+  shadows: {
+    shadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
   },
 
   colors: {
@@ -32,6 +36,8 @@ export const theme = {
     primary: '#40E0D0	',
     secondary: '#30c',
     muted: '#f6f6f6',
+    box: '#FFF8DC',
+    cart: '#8ef9f7',
   },
   text: {
     heading: {

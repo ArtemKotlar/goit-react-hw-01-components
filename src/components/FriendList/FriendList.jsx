@@ -1,9 +1,16 @@
 import PT from 'prop-types';
-import FriendListItem from './FriendListItem'
-import { List } from './FriendList.styled'
-const FriendList = ({friends}) => {
-    return (
-        <List>
+import FriendListItem from './FriendListItem';
+import { Box } from 'components/Box';
+const FriendList = ({ friends }) => {
+  return (
+    <Box
+      p="0"
+      mt={5}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      as="ul"
+    >
       {friends.map(({ id, avatar, name, isOnline }) => {
         return (
           <FriendListItem
@@ -14,12 +21,12 @@ const FriendList = ({friends}) => {
           />
         );
       })}
-    </List>
-    )
-}
+    </Box>
+  );
+};
 
-export default FriendList
+export default FriendList;
 
 FriendList.propTypes = {
-  id: PT.arrayOf(PT.shape({id: PT.string.isRequired}))
-}
+  id: PT.arrayOf(PT.shape({ id: PT.string.isRequired })),
+};

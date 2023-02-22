@@ -12,7 +12,16 @@ import { Box } from './Box';
 
 export const App = () => {
   return (
-    <Box bg="#FFF8DC">
+    <Box
+      bg="box"
+      pt={4}
+      pb={4}
+      width="100%"
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+      as="main"
+    >
       <Profile
         username={user.username}
         tag={user.tag}
